@@ -106,7 +106,7 @@ def run(json: dict):
             return {
                 "message": "Tool executed successfully!",
                 "output": {
-                    "matched_fertilizers": output_remote_path,
+                    "matched_products": output_remote_path,
                 },
                 "metrics": {
                     "records_in": len(df_npk),
@@ -209,7 +209,7 @@ def run(json: dict):
                     return {
                         "message": "Tool executed successfully!",
                         "output": {
-                            "matched_pesticides": output_remote_path,
+                            "matched_products": output_remote_path,
                         },
                         "metrics": {
                             "records_in": len(df_user),
