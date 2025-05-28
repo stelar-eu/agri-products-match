@@ -65,10 +65,10 @@ def run(json: dict):
         inputs = json["input"]
         outputs = json["output"]
 
-        npk_remote_path = inputs.get("npk_values")[0]
-        fert_remote_path = inputs.get("fertilizer_dataset")[0]
-        pesticides_remote_path = inputs.get("pesticides_dataset")[0]
-        substance_remote_path = inputs.get("active_substances")[0]
+        npk_remote_path = inputs.get("npk_values")[0] if "npk_values" in inputs else None
+        fert_remote_path = inputs.get("fertilizer_dataset")[0] if "fertilizer_dataset" in inputs else None
+        pesticides_remote_path = inputs.get("pesticides_dataset")[0] if "pesticides_dataset" in inputs else None
+        substance_remote_path = inputs.get("active_substances")[0] if "active_substances" in inputs else None
 
         output_remote_path = outputs["matched_products"]
 
