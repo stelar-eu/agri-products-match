@@ -76,6 +76,7 @@ An example spec for executing an autonomous instance the tool in Pesticides Matc
 }
 ```
 
+## Tool Input JSON
 At runtime the tool expects the following, translated by the API in NPK mode, JSON: 
 ```json
 
@@ -109,7 +110,7 @@ The tool expect two inputs during runtime that are being utilized in conjuction 
 - `npk_values` (CSV): Master list of fertilizers with guaranteed nutrient analyses.	
 
 
-## Tool Input JSON
+
 At runtime the tool expects the following, translated by the API in Pesticides mode, JSON: 
 ```json
 {

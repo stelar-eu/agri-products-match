@@ -1,6 +1,6 @@
 
 DOCKER=docker
-IMGTAG=petroud/npk-fertilizer-match:latest
+IMGTAG=petroud/agri-products-match:latest
 IMGPATH=.
 DOCKERFILE=$(IMGPATH)/Dockerfile
 
